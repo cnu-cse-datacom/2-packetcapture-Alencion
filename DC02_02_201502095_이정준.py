@@ -120,7 +120,7 @@ def convert_ip_address(data):
   ip_addr = '.'.join(ip_addr)
   return ip_addr
 
-recv_socket=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0X0800))
+recv_socket=socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0800))
 
 while True:
   data = recv_socket.recvfrom(20000)
